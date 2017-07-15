@@ -1,0 +1,37 @@
+public class MyFirstJavaProgram {
+public int total = 10;
+public static int amount = 500;  
+   
+	public MyFirstJavaProgram(){
+	System.out.println("------ > MyFirstJavaProgram!!!!");
+}; 
+	public MyFirstJavaProgram(int hello){
+	System.out.println("MyFirstJavaProgram!!!!");
+}; 
+/* This is my first java program.
+    * This will print 'Hello World' as the output
+    */
+
+   public static void main(String []args) {
+       // prints Hello World
+      System.out.println("Hello World!!!!");
+      MyFirstJavaProgram myFirstJavaProgram = new MyFirstJavaProgram(10);
+
+      int add = myFirstJavaProgram.addition(2,2);
+      int sub= myFirstJavaProgram.sub(2,2);
+System.out.println("Hello World!!!! "+myFirstJavaProgram.total );
+   }
+	
+   public int addition(int a, int b){
+	System.out.println("addition");
+	System.out.println(a + b); 
+int add = a+ b;
+return add;
+   }
+public int sub(int a, int b){
+	System.out.println("sub");
+	System.out.println(a - b); 
+int add = a- b;
+return add;
+   }
+}
